@@ -1,0 +1,125 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Cinzel', serif;
+  background: radial-gradient(ellipse at center, #0d0d0d 0%, #000 100%);
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+header {
+  background: linear-gradient(135deg, #0056b3, #00aaff);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 20px 5px rgba(0, 150, 255, 0.5);
+}
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(0, 170, 255, 0.8);
+}
+header p {
+  font-size: 1.2rem;
+}
+.container {
+  flex: 1;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 0 30px 5px rgba(0, 150, 255, 0.3);
+}
+.hidden {
+  display: none;
+}
+.button {
+  background: #007BFF;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+}
+.button:hover {
+  background: #0056b3;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 1);
+}
+input[type="text"],
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #222;
+  color: #eee;
+}
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+}
+.modal-content {
+  background: #222;
+  margin: 10% auto;
+  padding: 2rem;
+  border: 1px solid #444;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  text-align: center;
+  animation: fadeIn 0.5s;
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.7);
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: #fff;
+}
+/* Video styles */
+#transferVideo {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border: 3px solid #007BFF;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 123, 255, 0.8);
+}
+/* Footer */
+footer {
+  background: transparent;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
