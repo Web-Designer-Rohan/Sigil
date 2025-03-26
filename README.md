@@ -37,4 +37,4 @@ Digital Soul Transfer is a single‑page web application built with HTML, CSS, a
    Open your terminal and run:
 
    ```bash
-   git clone https://github.com/yourusername/digital-soul-transfer.git
+   https://github.com/Web-Designer-Rohan/Sigil.git
